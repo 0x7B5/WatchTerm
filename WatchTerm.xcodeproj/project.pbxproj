@@ -11,7 +11,7 @@
 		71437FDB3A08E70F996F4E5A /* Pods_WatchTerm_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2821508C07592965E8D6B4 /* Pods_WatchTerm_WatchKit_Extension.framework */; };
 		866E9273A959E64AAF49E22D /* Pods_WatchTerm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF9314BB3E384E62B563EE7 /* Pods_WatchTerm.framework */; };
 		B85A07A52238021400CCB039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07A42238021400CCB039 /* AppDelegate.swift */; };
-		B85A07A72238021400CCB039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07A62238021400CCB039 /* ViewController.swift */; };
+		B85A07A72238021400CCB039 /* CommandsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07A62238021400CCB039 /* CommandsTableVC.swift */; };
 		B85A07AC2238021500CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A07AB2238021500CCB039 /* Assets.xcassets */; };
 		B85A07B42238021500CCB039 /* WatchTerm WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B85A07B32238021500CCB039 /* WatchTerm WatchKit App.app */; };
 		B85A07BA2238021500CCB039 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A07B82238021500CCB039 /* Interface.storyboard */; };
@@ -23,6 +23,9 @@
 		B85A07CE2238021600CCB039 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07CD2238021600CCB039 /* ComplicationController.swift */; };
 		B85A07D02238021600CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A07CF2238021600CCB039 /* Assets.xcassets */; };
 		B85A07E6223811A200CCB039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A07E5223811A200CCB039 /* LaunchScreen.storyboard */; };
+		B85A07E8223814D400CCB039 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07E7223814D400CCB039 /* TabBarController.swift */; };
+		B85A07EA2238152400CCB039 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07E92238152400CCB039 /* SettingsVC.swift */; };
+		B85A07EC22381A3E00CCB039 /* CommandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07EB22381A3E00CCB039 /* CommandsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +80,7 @@
 		9CCE3E11E3DA7F3766F16C75 /* Pods-WatchTerm WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTerm WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-WatchTerm WatchKit App/Pods-WatchTerm WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		B85A07A12238021400CCB039 /* WatchTerm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTerm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85A07A42238021400CCB039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B85A07A62238021400CCB039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B85A07A62238021400CCB039 /* CommandsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsTableVC.swift; sourceTree = "<group>"; };
 		B85A07AB2238021500CCB039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B85A07B02238021500CCB039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B85A07B32238021500CCB039 /* WatchTerm WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchTerm WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +96,9 @@
 		B85A07D12238021600CCB039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B85A07D22238021600CCB039 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		B85A07E5223811A200CCB039 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B85A07E7223814D400CCB039 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B85A07E92238152400CCB039 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		B85A07EB22381A3E00CCB039 /* CommandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsView.swift; sourceTree = "<group>"; };
 		CE0AA703EE12FD44543144A0 /* Pods-WatchTerm WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTerm WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-WatchTerm WatchKit Extension/Pods-WatchTerm WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		E675332E408164CF1B4209CC /* Pods-WatchTerm WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTerm WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-WatchTerm WatchKit Extension/Pods-WatchTerm WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +205,7 @@
 		B85A07E022380DA300CCB039 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B85A07EB22381A3E00CCB039 /* CommandsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,7 +213,9 @@
 		B85A07E122380DB700CCB039 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B85A07A62238021400CCB039 /* ViewController.swift */,
+				B85A07A62238021400CCB039 /* CommandsTableVC.swift */,
+				B85A07E7223814D400CCB039 /* TabBarController.swift */,
+				B85A07E92238152400CCB039 /* SettingsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -469,7 +478,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B85A07A72238021400CCB039 /* ViewController.swift in Sources */,
+				B85A07E8223814D400CCB039 /* TabBarController.swift in Sources */,
+				B85A07EA2238152400CCB039 /* SettingsVC.swift in Sources */,
+				B85A07EC22381A3E00CCB039 /* CommandsView.swift in Sources */,
+				B85A07A72238021400CCB039 /* CommandsTableVC.swift in Sources */,
 				B85A07A52238021400CCB039 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

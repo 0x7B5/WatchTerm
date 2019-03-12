@@ -8,13 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CommandsTableVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupView()
     }
-
+    
+    func setupView() {
+        self.title = "Commands"
+        self.navigationController?.navigationBar.layer.masksToBounds = false
+    }
 
 }
 
