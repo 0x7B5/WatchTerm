@@ -1,0 +1,1531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0354790E92EF940E01AE4B02DCD4C296 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459438BFFA842C74DD5014C501423B39 /* Foundation.framework */; };
+		05D10421E11269EA8421CA092321E851 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E199A562F4950EC6E7A6C777A1C6140E /* LayoutConstraint.swift */; };
+		0C1DE23E8F5A69B854105653EC0F5010 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8CB80018C55B1E0CD59FFCA97ECD5AD /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C2A1A5FBBB9FBFC8FD1DE64C711A525 /* NMSSHConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = A10E9A83D2E14F656971DC7F41C9313D /* NMSSHConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E1BFEE90CE865B2DBDDB820B6974771 /* NMSSHSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AE09AAEE72D6A6F2300AC3489365EA /* NMSSHSession.m */; };
+		117A5DA1B1578547FE0A4EBABE450A3B /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765FDCBDA63D28C332D7F0C23449E2E5 /* ConstraintMakerExtendable.swift */; };
+		1320CDBDD7D857243FCD151329F1E1A1 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9805932EC4E43FC0ADC5654830D97 /* ConstraintView+Extensions.swift */; };
+		1A0500AD04074C74F6D1F2C83DB40467 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8257A451AE4085B93DEBFFB2DB534725 /* SnapKit-dummy.m */; };
+		1A602E74C4D12FBEEB05DD308D31888B /* NMSSHChannelDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 332E4BE288F14292E8150BF7BF01C226 /* NMSSHChannelDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21EEB2836E6D20B82BAF1B99C05A1604 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E727F825F85A793278377960BCDE9D82 /* LayoutConstraintItem.swift */; };
+		26C1C0E2DDE064F2CD8CB8062B1FA527 /* libssh2_publickey.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F307B9805C8157E7BE71788CCE5D1BB /* libssh2_publickey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27FFEF3DD18B6DBBB9B17563C55B6742 /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931ABA13657F8C9819992BFA5857EF17 /* NMSSH.framework */; };
+		2C8681CE8ED26467C0F9D7FB16579E06 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD28353CFD48A43E0E75ABF4654A78 /* Debugging.swift */; };
+		2D8B873B0D501D68F3F9A4AF80A8049B /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD280DE3518CE0D4B28B2A957E341DB /* ConstraintPriorityTarget.swift */; };
+		332CF4335EDA1856FDD4AE1B1CE09355 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428DD11A858FEE03FC21F4FF8ED5B88 /* ConstraintOffsetTarget.swift */; };
+		35890190F88D371A547BCA1CD937F744 /* socket_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 76F400B2B80DF29B846B40D0102BD70B /* socket_helper.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3BD74B8F7D0F08C5C340ACE62551D33F /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFE762020EB7B388CF7E666148192F2 /* ConstraintMakerFinalizable.swift */; };
+		46CBD962A18C80E1180B59FB6C39F0C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459438BFFA842C74DD5014C501423B39 /* Foundation.framework */; };
+		4C766D5F879FBAB7F8B27F9262232BBF /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A7129D1B39F0D74B1D29C0B4730F08 /* ConstraintMakerRelatable.swift */; };
+		4DB6DD9F9EA93D2E20C95C9C83DB7D93 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EE036973AB439BA4D35A79BBF427E1 /* ConstraintConfig.swift */; };
+		4E4622150E5FFFCEE7A9C1FF35A42AE8 /* NMSSHLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B19C731F042A475874E030FFCFB96F /* NMSSHLogger.m */; };
+		505A1E14E0953EAC28E0E6186D4A741A /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B46758361172E24468EEE596FC19813 /* ConstraintDescription.swift */; };
+		51B4D455CFDC518DEBD083F5A9E06C00 /* PVPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA09D4AABECE0E3ADF06017D0FFA198 /* PVPError.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		54F3B621B8463D85E0CD9566F075E4A5 /* NMSFTPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 75700E819CA88FDCB37E71481D403C9D /* NMSFTPFile.m */; };
+		6393F931F882C14DEB2D8B7D1D537CDE /* libssh2.h in Headers */ = {isa = PBXBuildFile; fileRef = 823E31E77EFFDCB110C33969BE23FC6C /* libssh2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		643C5ACF1A72433906E474D5DA2C5DCF /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF32834AB288198D41C1A768855FA04F /* ConstraintLayoutGuide+Extensions.swift */; };
+		6888C5122D9A379923EAA431A5D109E3 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EE2976D83C9CABA865E977D2A57660 /* ConstraintLayoutSupportDSL.swift */; };
+		6A6A1D8CD2E448236AD039C71841B88A /* NMSSH.h in Headers */ = {isa = PBXBuildFile; fileRef = BA25C1F49C952A79991954E1750F5194 /* NMSSH.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6C67D9961391D5958EF3C33A3F6BB020 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6AAD57DCE65AB0BA3FEF5D45CBB37 /* ConstraintAttributes.swift */; };
+		6F97AB4FB74E172ED968D0C68C89A41F /* PVPSSHManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B46EA54657E06E9625B5350A3030CCE /* PVPSSHManager.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		708C58DD03BCD898EE81963582D0EFD2 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F701EC6837746AE8DD3EF14FB49EAF /* ConstraintViewDSL.swift */; };
+		763652823F2D8901055DBD4BDFE535BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459438BFFA842C74DD5014C501423B39 /* Foundation.framework */; };
+		78AE3CC27B1A27EC6027841A5BB5CF4E /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F733CFADDCF0A02532E59D37547CBE /* ConstraintMakerPriortizable.swift */; };
+		79359CF058B3376845372B9D47EB3B21 /* Pods-WatchTerm WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A60B2C6ED74031DCF3D2347C8E9B0F /* Pods-WatchTerm WatchKit Extension-dummy.m */; };
+		7A21EEB8F8A87F0C5C581722519FE3C0 /* NMSSH-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4074F2899012D3FC889543B7C9988E /* NMSSH-dummy.m */; };
+		7D7A35A7979C2B321C455F68F527D3EE /* NMSSHSession.h in Headers */ = {isa = PBXBuildFile; fileRef = A6DB9B1F526EB2BFB7E043BE2D17949E /* NMSSHSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F2B11A9A344CEAF37259FE712907AAA /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24905F767C5DDEFDFA13A034735A6286 /* ConstraintLayoutGuideDSL.swift */; };
+		832695AD3BB75D2F465172711531EB6C /* NMSSHConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B0928D3CCA5EC0FBADC27C34667DB7FB /* NMSSHConfig.m */; };
+		874345B7A2AAB6344263E134CD5DF942 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EEF4AD55AAEA5B429BAAE09AF85A6 /* ConstraintRelatableTarget.swift */; };
+		89D40E25AD838549BF9F4D40EA16012F /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479145DAEF8258BDD26D5F9A1014DABB /* Typealiases.swift */; };
+		8AF8EEF4044EFC483C2C448F53A52ECD /* NMSSHLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CD80B41F18EB02B9F02F8220DEC478 /* NMSSHLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B737099939B4594A6709B0BCAD77015 /* PVPSSHSecure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BBC268D9B40F433A3EE82D27D782C8 /* PVPSSHSecure.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8BA5575FBD7FC88FB42646734B9D29EC /* NMSSHHostConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6DA29F17A66F85B0A3005DCA2755B3 /* NMSSHHostConfig.m */; };
+		8E2767F1FD9A936DBD54F81B30A76182 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449FA71E9F4A0B2C8F8EF9EA80DF314A /* ConstraintDSL.swift */; };
+		93DEACB88110CBC9F9E1468B30A26442 /* libssh2_sftp.h in Headers */ = {isa = PBXBuildFile; fileRef = D2722EF5157803DF8835AC6AEBA5DA56 /* libssh2_sftp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AF1BE40B331C64DAE5BF77F8546C046 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56BA902957C18F6E457467D73C03602 /* ConstraintMakerEditable.swift */; };
+		9B93305FC74D2CA77F65CB4C74D5BD05 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5709E7EA637CD205E621029B5D451E4 /* ConstraintLayoutSupport.swift */; };
+		A02B7B4EBC9BA58C5861420F287912DD /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9E0088DF43B7E1049DEC5F485E96A4 /* ConstraintMaker.swift */; };
+		A6C922076D60F5AAB637EA1876DCE49F /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25591E506D5C0896CE3C3EF32AFA8F9 /* ConstraintItem.swift */; };
+		A704A06E9D7C38C687D877055464E55F /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228F0F9FDE137F8C8E192C10C3BD34B5 /* ConstraintPriority.swift */; };
+		B65734F9BF7FFB06FC476A435A516DED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2282B9115B20129ABD2BE1193FF0DC1A /* Foundation.framework */; };
+		BB8B518611395999DAD11AE7030BC306 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459438BFFA842C74DD5014C501423B39 /* Foundation.framework */; };
+		BD3A93A34F2587621C09783A9021F205 /* Pods-WatchTerm WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7F9EE3FC7E54CA3A036CA221E1085C /* Pods-WatchTerm WatchKit App-dummy.m */; };
+		C05696CD96727BB0F683AAEB3B066D79 /* NMSSHChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = B327D9EA6C3EB6334364F58292B7C428 /* NMSSHChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C156AA8EA07D3623D156FE5484D2A892 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D568DE6A3A416B61EB242F948A24607 /* CFNetwork.framework */; };
+		C730097CDEC2FC60951A9691EB830FA1 /* PVPMikrotikSSH-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEF40CDDA6417448560B18C0307B2B /* PVPMikrotikSSH-dummy.m */; };
+		C7E1150C2926EAEE0E7C9D8F65A41204 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F532877AB8153E374AC333D1020E1 /* ConstraintRelation.swift */; };
+		C89E2B67368CB04A85D5D00328D55951 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84B4AE0DD7B89F5D32DAE3AE0B2C02E /* ConstraintMultiplierTarget.swift */; };
+		C9EE512D1B54FE8F73457B3B4D977D05 /* NMSSH+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 69FE7C225F9E0263F3A7CB33C91C687B /* NMSSH+Protected.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CAA82AA491A65FBBD3670424D88503A5 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBD8BEA29327CB1CBD6EE2AD70FF3FD /* ConstraintInsets.swift */; };
+		CCCD3B94F709800995C086BBAE5132CE /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2608E112C80BBAF6CE428993AA6E9 /* ConstraintLayoutGuide.swift */; };
+		CDF8D7781F67EC8DCF5C8F0D3816F1AA /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3965C2D71844EB8AD19CBCD09399FD /* ConstraintView.swift */; };
+		CE591C8216D643378147927A5D4A9D2E /* Pods-WatchTerm WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 660414D77F2C58C4A51D79D19B32DC5B /* Pods-WatchTerm WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF87BA03FF053EC2C9E4E8634216AB32 /* NMSSH.h in Headers */ = {isa = PBXBuildFile; fileRef = 551D9CCC1593B121D864C33A708E5FB5 /* NMSSH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1668ED971DFB69F97BA6C65CC95D572 /* NMSSH-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15287560C4AA4EF938FC04D4A0A2492D /* NMSSH-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D16DBF9D1C9ECF67C9B07D00B583F7A5 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8E020C8CC0C0C2DF30A5FE5B361EC /* Constraint.swift */; };
+		D8BFC6AC5E0F79C022EE3B52738ACEAD /* NMSFTPFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 172EC8A4A54B97545CE0672F30ECA384 /* NMSFTPFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD8578E7F98195AF3026DBE03E6E8A24 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FB4A4381321D96066A71B02066B60D /* UILayoutSupport+Extensions.swift */; };
+		DED9A132AA06B99E45826E22386C538C /* PVPMikrotikSSH-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F8AA47A1119D6A760D726FF6F987BC /* PVPMikrotikSSH-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFC37DD8A79EEC4B67ED240FF79FE50D /* NMSSHChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A80ED10795F1AF987949C9A3637A2 /* NMSSHChannel.m */; };
+		E613C358F085C645CA4D48AF56D1F40E /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD681024D4C2A4B27F5B6AD3A730EFE9 /* ConstraintConstantTarget.swift */; };
+		E7DB307ED4496F3557B5323DD0860564 /* PVPMikrotikSSH.h in Headers */ = {isa = PBXBuildFile; fileRef = 176BB8CE1CBF88FBEE36C98B87BCE3CD /* PVPMikrotikSSH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB55FCEE8D2FC261D8502455C16BCE2F /* socket_helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A2B724F26C07CC09B4D352AD05F4EA /* socket_helper.m */; };
+		EC21C3EC1B6DFCDD4E4B4CEF2A4B022B /* NMSFTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 2805EEE0ADDF15BD56920F8AB4C564B0 /* NMSFTP.m */; };
+		F36C4ED62947D6369F62A68AAA6B3D74 /* NMSSHHostConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5C761D44C49334F8CE7F2DEF4177E2 /* NMSSHHostConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBBFB62001FF0278912118D10D78046D /* Pods-WatchTerm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAE376754C1AE77F3DB9C037263FB207 /* Pods-WatchTerm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC29303F36A7E5C38302CE8985F7E2A4 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FE64971DDBE4A2304A56DB4C59156E /* ConstraintInsetTarget.swift */; };
+		FD04CE263597CD47B1A91907AA36D5BA /* Pods-WatchTerm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 857B9BF1AE59FD04C689813B5C5EDFE4 /* Pods-WatchTerm-dummy.m */; };
+		FE88B84045F101F0100DE09880AD7011 /* NMSFTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 94EFDE1F02F6EEDF5A5BA561313B60D1 /* NMSFTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF0E7DC39EF346395F682207D1D1AA6D /* NMSSHSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 23AABBF238DE3131C69AF85A72690CD0 /* NMSSHSessionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3ABD539A003B1D47808830BD557F847A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4C38B058AD33DE1FABFEE379CF95262;
+			remoteInfo = NMSSH;
+		};
+		3C5931ECFD6E1F49DA42133FD050D5B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C45697D57ED862CA87EDEC460CDC2214;
+			remoteInfo = SnapKit;
+		};
+		69EF8E0470C42D934DE4A0B0B9ACF87D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4C38B058AD33DE1FABFEE379CF95262;
+			remoteInfo = NMSSH;
+		};
+		A489EB884E45F7D99BF601625B3016D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1FA1B3804F190638BECBDA7B48B0E48;
+			remoteInfo = PVPMikrotikSSH;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01A182232555121CE3923811F99FD30E /* Pods-WatchTerm-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchTerm-acknowledgements.markdown"; sourceTree = "<group>"; };
+		02CD80B41F18EB02B9F02F8220DEC478 /* NMSSHLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHLogger.h; path = NMSSH/Config/NMSSHLogger.h; sourceTree = "<group>"; };
+		040F532877AB8153E374AC333D1020E1 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		09AE09AAEE72D6A6F2300AC3489365EA /* NMSSHSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHSession.m; path = NMSSH/NMSSHSession.m; sourceTree = "<group>"; };
+		0A56E36DCC1F5BBA81EB1347FE4CDB87 /* NMSSH-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NMSSH-prefix.pch"; sourceTree = "<group>"; };
+		0BC2608E112C80BBAF6CE428993AA6E9 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		0D8AC8322CBB358D42AE46CA86BFD2EA /* Pods-WatchTerm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchTerm.release.xcconfig"; sourceTree = "<group>"; };
+		0E3965C2D71844EB8AD19CBCD09399FD /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		100C3AE62B3A3A63655E305440CA6511 /* Pods-WatchTerm WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchTerm WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		10A60B2C6ED74031DCF3D2347C8E9B0F /* Pods-WatchTerm WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatchTerm WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		14FE64971DDBE4A2304A56DB4C59156E /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		15287560C4AA4EF938FC04D4A0A2492D /* NMSSH-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NMSSH-umbrella.h"; sourceTree = "<group>"; };
+		168877D3656A729C4D18A2E9B8D91BFF /* PVPMikrotikSSH-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PVPMikrotikSSH-prefix.pch"; sourceTree = "<group>"; };
+		172EC8A4A54B97545CE0672F30ECA384 /* NMSFTPFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSFTPFile.h; path = NMSSH/NMSFTPFile.h; sourceTree = "<group>"; };
+		176BB8CE1CBF88FBEE36C98B87BCE3CD /* PVPMikrotikSSH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PVPMikrotikSSH.h; path = PVPMikrotikSSH/PVPMikrotikSSH.h; sourceTree = "<group>"; };
+		207D7257367919E0600E8B254A8D70F7 /* PVPMikrotikSSH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PVPMikrotikSSH.framework; path = PVPMikrotikSSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2282B9115B20129ABD2BE1193FF0DC1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		228F0F9FDE137F8C8E192C10C3BD34B5 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		22A2B724F26C07CC09B4D352AD05F4EA /* socket_helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = socket_helper.m; path = NMSSH/Config/socket_helper.m; sourceTree = "<group>"; };
+		22A7129D1B39F0D74B1D29C0B4730F08 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		23AABBF238DE3131C69AF85A72690CD0 /* NMSSHSessionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHSessionDelegate.h; path = NMSSH/Protocols/NMSSHSessionDelegate.h; sourceTree = "<group>"; };
+		24905F767C5DDEFDFA13A034735A6286 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		25FD28353CFD48A43E0E75ABF4654A78 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		26D99ED2B1ABBD934D8BC2FB60B20725 /* NMSSH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NMSSH.framework; path = NMSSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2703314C0B3F72A67D9BF6EE5A53BF8E /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		27807F7765F07B93BD5909EEF71A723C /* PVPMikrotikSSH.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PVPMikrotikSSH.modulemap; sourceTree = "<group>"; };
+		2805EEE0ADDF15BD56920F8AB4C564B0 /* NMSFTP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSFTP.m; path = NMSSH/NMSFTP.m; sourceTree = "<group>"; };
+		2B46EA54657E06E9625B5350A3030CCE /* PVPSSHManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PVPSSHManager.swift; path = PVPMikrotikSSH/PVPSSHManager.swift; sourceTree = "<group>"; };
+		2BAB94A2701EE661500A80EE8069CA22 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		332E4BE288F14292E8150BF7BF01C226 /* NMSSHChannelDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHChannelDelegate.h; path = NMSSH/Protocols/NMSSHChannelDelegate.h; sourceTree = "<group>"; };
+		3B46758361172E24468EEE596FC19813 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		3CFC83149CE0C47941729E8147264BA0 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "NMSSH-iOS/Libraries/lib/libcrypto.a"; sourceTree = "<group>"; };
+		3D47481A491C4F36389FC4457A975654 /* Pods-WatchTerm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WatchTerm.modulemap"; sourceTree = "<group>"; };
+		3D568DE6A3A416B61EB242F948A24607 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		3F6DA29F17A66F85B0A3005DCA2755B3 /* NMSSHHostConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHHostConfig.m; path = NMSSH/NMSSHHostConfig.m; sourceTree = "<group>"; };
+		40EE2976D83C9CABA865E977D2A57660 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		449FA71E9F4A0B2C8F8EF9EA80DF314A /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		459438BFFA842C74DD5014C501423B39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		479145DAEF8258BDD26D5F9A1014DABB /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		48E8E020C8CC0C0C2DF30A5FE5B361EC /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		4D4074F2899012D3FC889543B7C9988E /* NMSSH-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NMSSH-dummy.m"; sourceTree = "<group>"; };
+		4DCB12683F1DFF28B1E98E41299B9C2A /* Pods_WatchTerm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WatchTerm.framework; path = "Pods-WatchTerm.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EA09D4AABECE0E3ADF06017D0FFA198 /* PVPError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PVPError.swift; path = PVPMikrotikSSH/PVPError.swift; sourceTree = "<group>"; };
+		4EF4D6D1A0FDEB226CBDDCCBC091A3E2 /* Pods-WatchTerm WatchKit Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchTerm WatchKit Extension-Info.plist"; sourceTree = "<group>"; };
+		4FAC249A6FDEEAFA6431073615AFD28E /* PVPMikrotikSSH-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PVPMikrotikSSH-Info.plist"; sourceTree = "<group>"; };
+		4FBD8BEA29327CB1CBD6EE2AD70FF3FD /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		551D9CCC1593B121D864C33A708E5FB5 /* NMSSH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSH.h; path = NMSSH/NMSSH.h; sourceTree = "<group>"; };
+		55C6AA4F710ED5FD47958C6A93D2E256 /* NMSSH.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NMSSH.modulemap; sourceTree = "<group>"; };
+		5F307B9805C8157E7BE71788CCE5D1BB /* libssh2_publickey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2_publickey.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2_publickey.h"; sourceTree = "<group>"; };
+		62DAABF2209D35D1AF9FFC2BB4E4092B /* Pods-WatchTerm-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchTerm-Info.plist"; sourceTree = "<group>"; };
+		63EE036973AB439BA4D35A79BBF427E1 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		660414D77F2C58C4A51D79D19B32DC5B /* Pods-WatchTerm WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WatchTerm WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		69FE7C225F9E0263F3A7CB33C91C687B /* NMSSH+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NMSSH+Protected.h"; path = "NMSSH/Config/NMSSH+Protected.h"; sourceTree = "<group>"; };
+		70F733CFADDCF0A02532E59D37547CBE /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		75700E819CA88FDCB37E71481D403C9D /* NMSFTPFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSFTPFile.m; path = NMSSH/NMSFTPFile.m; sourceTree = "<group>"; };
+		765FDCBDA63D28C332D7F0C23449E2E5 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		767F5A66699DF5A6C245B7C1DA5D8781 /* NMSSH.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMSSH.xcconfig; sourceTree = "<group>"; };
+		76F400B2B80DF29B846B40D0102BD70B /* socket_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = socket_helper.h; path = NMSSH/Config/socket_helper.h; sourceTree = "<group>"; };
+		79E55697FE38E42C6162B19939964945 /* Pods-WatchTerm WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchTerm WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7C4A80ED10795F1AF987949C9A3637A2 /* NMSSHChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHChannel.m; path = NMSSH/NMSSHChannel.m; sourceTree = "<group>"; };
+		7D597C0AED4A5E31E02E5B9C328E1BB0 /* NMSSH-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NMSSH-Info.plist"; sourceTree = "<group>"; };
+		7D5BDE7B80BB5E33D73A0C8F7694FEF3 /* Pods-WatchTerm WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchTerm WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		823E31E77EFFDCB110C33969BE23FC6C /* libssh2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2.h"; sourceTree = "<group>"; };
+		8257A451AE4085B93DEBFFB2DB534725 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		857B9BF1AE59FD04C689813B5C5EDFE4 /* Pods-WatchTerm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatchTerm-dummy.m"; sourceTree = "<group>"; };
+		872AAA1CA1DA632A00F9960BDF4814C4 /* Pods-WatchTerm-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchTerm-acknowledgements.plist"; sourceTree = "<group>"; };
+		8ABAC06B6D607300A09E510C98BD7508 /* PVPMikrotikSSH.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PVPMikrotikSSH.xcconfig; sourceTree = "<group>"; };
+		931ABA13657F8C9819992BFA5857EF17 /* NMSSH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NMSSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94EFDE1F02F6EEDF5A5BA561313B60D1 /* NMSFTP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSFTP.h; path = NMSSH/NMSFTP.h; sourceTree = "<group>"; };
+		96A6AAD57DCE65AB0BA3FEF5D45CBB37 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		974ECD9EA81858AEAACB248073A73531 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "NMSSH-iOS/Libraries/lib/libssl.a"; sourceTree = "<group>"; };
+		987508793EF20A84FC9732EA4E04CCD5 /* Pods-WatchTerm WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchTerm WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		99BBC268D9B40F433A3EE82D27D782C8 /* PVPSSHSecure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PVPSSHSecure.swift; path = PVPMikrotikSSH/PVPSSHSecure.swift; sourceTree = "<group>"; };
+		9A6820D57346F6BC4BE6AFBD8216FB40 /* Pods_WatchTerm_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WatchTerm_WatchKit_Extension.framework; path = "Pods-WatchTerm WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E7F9EE3FC7E54CA3A036CA221E1085C /* Pods-WatchTerm WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatchTerm WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		9EC50AC138A8B8F8D29984656D01F952 /* libPods-WatchTerm WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WatchTerm WatchKit App.a"; path = "libPods-WatchTerm WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10E9A83D2E14F656971DC7F41C9313D /* NMSSHConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHConfig.h; path = NMSSH/NMSSHConfig.h; sourceTree = "<group>"; };
+		A25591E506D5C0896CE3C3EF32AFA8F9 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		A428DD11A858FEE03FC21F4FF8ED5B88 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		A6DB9B1F526EB2BFB7E043BE2D17949E /* NMSSHSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHSession.h; path = NMSSH/NMSSHSession.h; sourceTree = "<group>"; };
+		A7778A865A8D972A317706802400B20B /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		A8D1AE918112EF0C64A70393F2D9CBA8 /* Pods-WatchTerm WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WatchTerm WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		AC682813337C5820566116C8819BC3C7 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		AF32834AB288198D41C1A768855FA04F /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		AFFEF40CDDA6417448560B18C0307B2B /* PVPMikrotikSSH-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PVPMikrotikSSH-dummy.m"; sourceTree = "<group>"; };
+		B0928D3CCA5EC0FBADC27C34667DB7FB /* NMSSHConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHConfig.m; path = NMSSH/NMSSHConfig.m; sourceTree = "<group>"; };
+		B327D9EA6C3EB6334364F58292B7C428 /* NMSSHChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHChannel.h; path = NMSSH/NMSSHChannel.h; sourceTree = "<group>"; };
+		B84B4AE0DD7B89F5D32DAE3AE0B2C02E /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		B8F701EC6837746AE8DD3EF14FB49EAF /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		BA25C1F49C952A79991954E1750F5194 /* NMSSH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSH.h; path = "NMSSH-iOS/NMSSH.h"; sourceTree = "<group>"; };
+		BA5C761D44C49334F8CE7F2DEF4177E2 /* NMSSHHostConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHHostConfig.h; path = NMSSH/NMSSHHostConfig.h; sourceTree = "<group>"; };
+		BAE376754C1AE77F3DB9C037263FB207 /* Pods-WatchTerm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WatchTerm-umbrella.h"; sourceTree = "<group>"; };
+		BC352D11FC9E33E4D8910B857D1A52D9 /* Pods-WatchTerm WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchTerm WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		BC6D6CC03CDC8786725CCB40A18F8C2D /* Pods-WatchTerm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchTerm.debug.xcconfig"; sourceTree = "<group>"; };
+		BCFE762020EB7B388CF7E666148192F2 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		BFD280DE3518CE0D4B28B2A957E341DB /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		C1D8CC099B6207A8E11706C63BF92BFF /* Pods-WatchTerm WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchTerm WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		C56BA902957C18F6E457467D73C03602 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		D1B19C731F042A475874E030FFCFB96F /* NMSSHLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHLogger.m; path = NMSSH/Config/NMSSHLogger.m; sourceTree = "<group>"; };
+		D2722EF5157803DF8835AC6AEBA5DA56 /* libssh2_sftp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2_sftp.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2_sftp.h"; sourceTree = "<group>"; };
+		D2F8AA47A1119D6A760D726FF6F987BC /* PVPMikrotikSSH-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PVPMikrotikSSH-umbrella.h"; sourceTree = "<group>"; };
+		D4817F65F32107EA623C48482EF86DEB /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		D58EBC94E74AC312A6AEDD7C90DA26D5 /* Pods-WatchTerm WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchTerm WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		DB9E0088DF43B7E1049DEC5F485E96A4 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		DD681024D4C2A4B27F5B6AD3A730EFE9 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		E0FB4A4381321D96066A71B02066B60D /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		E17EEF4AD55AAEA5B429BAAE09AF85A6 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		E199A562F4950EC6E7A6C777A1C6140E /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		E1F9805932EC4E43FC0ADC5654830D97 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		E727F825F85A793278377960BCDE9D82 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		E8CB80018C55B1E0CD59FFCA97ECD5AD /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		EAE3F9E2BEECA9A7E724D0427568C60F /* Pods-WatchTerm WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchTerm WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		F467C8E1D66F08DEA3C817BC16EA582A /* libssh2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssh2.a; path = "NMSSH-iOS/Libraries/lib/libssh2.a"; sourceTree = "<group>"; };
+		F5709E7EA637CD205E621029B5D451E4 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		FCFD8D18A8BDCA31F83DB185CE0CE114 /* Pods-WatchTerm-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatchTerm-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20F8F31BD9BBCAD67F11EB98BECAA04F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8B518611395999DAD11AE7030BC306 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BADDB89B0F8815710172258ECE458DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46CBD962A18C80E1180B59FB6C39F0C5 /* Foundation.framework in Frameworks */,
+				27FFEF3DD18B6DBBB9B17563C55B6742 /* NMSSH.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D43FA024FDF84836B672895D5CEBDBB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C156AA8EA07D3623D156FE5484D2A892 /* CFNetwork.framework in Frameworks */,
+				763652823F2D8901055DBD4BDFE535BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB21D297339B48816D86E2E64BC6D5B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0354790E92EF940E01AE4B02DCD4C296 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE8C7D5C273A0D20A67696702EA42753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65734F9BF7FFB06FC476A435A516DED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F706C7B55A66F653DA25E6E6C3A46E65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04E113A7B3ECE12C473AD00E692B75F4 /* PVPMikrotikSSH */ = {
+			isa = PBXGroup;
+			children = (
+				4EA09D4AABECE0E3ADF06017D0FFA198 /* PVPError.swift */,
+				176BB8CE1CBF88FBEE36C98B87BCE3CD /* PVPMikrotikSSH.h */,
+				2B46EA54657E06E9625B5350A3030CCE /* PVPSSHManager.swift */,
+				99BBC268D9B40F433A3EE82D27D782C8 /* PVPSSHSecure.swift */,
+				A3F2CE698421DD331C3D8169B49C948A /* Support Files */,
+			);
+			name = PVPMikrotikSSH;
+			path = PVPMikrotikSSH;
+			sourceTree = "<group>";
+		};
+		109DE44AA908E43337EB40975FF6AC4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC765BCFEEDE6DA54B11F578832087B6 /* NMSSH */,
+				04E113A7B3ECE12C473AD00E692B75F4 /* PVPMikrotikSSH */,
+				C9C7C026478250556BDD1A791173BCB9 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		14FAA8F4A78CF2D5C4C04B2278FD5AB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CFC83149CE0C47941729E8147264BA0 /* libcrypto.a */,
+				F467C8E1D66F08DEA3C817BC16EA582A /* libssh2.a */,
+				974ECD9EA81858AEAACB248073A73531 /* libssl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C5D1FE7E554B048765F96239385559A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2703314C0B3F72A67D9BF6EE5A53BF8E /* SnapKit.modulemap */,
+				D4817F65F32107EA623C48482EF86DEB /* SnapKit.xcconfig */,
+				8257A451AE4085B93DEBFFB2DB534725 /* SnapKit-dummy.m */,
+				A7778A865A8D972A317706802400B20B /* SnapKit-Info.plist */,
+				AC682813337C5820566116C8819BC3C7 /* SnapKit-prefix.pch */,
+				E8CB80018C55B1E0CD59FFCA97ECD5AD /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		3DD1BC88BDFEEE776C03D49062EF6420 /* Pods-WatchTerm WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1AE918112EF0C64A70393F2D9CBA8 /* Pods-WatchTerm WatchKit Extension.modulemap */,
+				79E55697FE38E42C6162B19939964945 /* Pods-WatchTerm WatchKit Extension-acknowledgements.markdown */,
+				C1D8CC099B6207A8E11706C63BF92BFF /* Pods-WatchTerm WatchKit Extension-acknowledgements.plist */,
+				10A60B2C6ED74031DCF3D2347C8E9B0F /* Pods-WatchTerm WatchKit Extension-dummy.m */,
+				4EF4D6D1A0FDEB226CBDDCCBC091A3E2 /* Pods-WatchTerm WatchKit Extension-Info.plist */,
+				660414D77F2C58C4A51D79D19B32DC5B /* Pods-WatchTerm WatchKit Extension-umbrella.h */,
+				BC352D11FC9E33E4D8910B857D1A52D9 /* Pods-WatchTerm WatchKit Extension.debug.xcconfig */,
+				7D5BDE7B80BB5E33D73A0C8F7694FEF3 /* Pods-WatchTerm WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-WatchTerm WatchKit Extension";
+			path = "Target Support Files/Pods-WatchTerm WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		59955F095C62FC06AAA114C9C16BB79E /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				2282B9115B20129ABD2BE1193FF0DC1A /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		8A9A709AFD57454942F8CCDBF38DDDAC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				55C6AA4F710ED5FD47958C6A93D2E256 /* NMSSH.modulemap */,
+				767F5A66699DF5A6C245B7C1DA5D8781 /* NMSSH.xcconfig */,
+				4D4074F2899012D3FC889543B7C9988E /* NMSSH-dummy.m */,
+				7D597C0AED4A5E31E02E5B9C328E1BB0 /* NMSSH-Info.plist */,
+				0A56E36DCC1F5BBA81EB1347FE4CDB87 /* NMSSH-prefix.pch */,
+				15287560C4AA4EF938FC04D4A0A2492D /* NMSSH-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NMSSH";
+			sourceTree = "<group>";
+		};
+		97F722C170EC68473D0C86BC00F9DFB7 /* Pods-WatchTerm WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				100C3AE62B3A3A63655E305440CA6511 /* Pods-WatchTerm WatchKit App-acknowledgements.markdown */,
+				EAE3F9E2BEECA9A7E724D0427568C60F /* Pods-WatchTerm WatchKit App-acknowledgements.plist */,
+				9E7F9EE3FC7E54CA3A036CA221E1085C /* Pods-WatchTerm WatchKit App-dummy.m */,
+				D58EBC94E74AC312A6AEDD7C90DA26D5 /* Pods-WatchTerm WatchKit App.debug.xcconfig */,
+				987508793EF20A84FC9732EA4E04CCD5 /* Pods-WatchTerm WatchKit App.release.xcconfig */,
+			);
+			name = "Pods-WatchTerm WatchKit App";
+			path = "Target Support Files/Pods-WatchTerm WatchKit App";
+			sourceTree = "<group>";
+		};
+		9E7459571C30809A3EA5B11E9408AF69 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E60BBCD3C45F6148A12C4080C4C4CBA8 /* Pods-WatchTerm */,
+				97F722C170EC68473D0C86BC00F9DFB7 /* Pods-WatchTerm WatchKit App */,
+				3DD1BC88BDFEEE776C03D49062EF6420 /* Pods-WatchTerm WatchKit Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A3F2CE698421DD331C3D8169B49C948A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				27807F7765F07B93BD5909EEF71A723C /* PVPMikrotikSSH.modulemap */,
+				8ABAC06B6D607300A09E510C98BD7508 /* PVPMikrotikSSH.xcconfig */,
+				AFFEF40CDDA6417448560B18C0307B2B /* PVPMikrotikSSH-dummy.m */,
+				4FAC249A6FDEEAFA6431073615AFD28E /* PVPMikrotikSSH-Info.plist */,
+				168877D3656A729C4D18A2E9B8D91BFF /* PVPMikrotikSSH-prefix.pch */,
+				D2F8AA47A1119D6A760D726FF6F987BC /* PVPMikrotikSSH-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PVPMikrotikSSH";
+			sourceTree = "<group>";
+		};
+		A42411AF349D9D13963E459BA086FBF3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3D568DE6A3A416B61EB242F948A24607 /* CFNetwork.framework */,
+				459438BFFA842C74DD5014C501423B39 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AC765BCFEEDE6DA54B11F578832087B6 /* NMSSH */ = {
+			isa = PBXGroup;
+			children = (
+				823E31E77EFFDCB110C33969BE23FC6C /* libssh2.h */,
+				5F307B9805C8157E7BE71788CCE5D1BB /* libssh2_publickey.h */,
+				D2722EF5157803DF8835AC6AEBA5DA56 /* libssh2_sftp.h */,
+				94EFDE1F02F6EEDF5A5BA561313B60D1 /* NMSFTP.h */,
+				2805EEE0ADDF15BD56920F8AB4C564B0 /* NMSFTP.m */,
+				172EC8A4A54B97545CE0672F30ECA384 /* NMSFTPFile.h */,
+				75700E819CA88FDCB37E71481D403C9D /* NMSFTPFile.m */,
+				BA25C1F49C952A79991954E1750F5194 /* NMSSH.h */,
+				551D9CCC1593B121D864C33A708E5FB5 /* NMSSH.h */,
+				69FE7C225F9E0263F3A7CB33C91C687B /* NMSSH+Protected.h */,
+				B327D9EA6C3EB6334364F58292B7C428 /* NMSSHChannel.h */,
+				7C4A80ED10795F1AF987949C9A3637A2 /* NMSSHChannel.m */,
+				332E4BE288F14292E8150BF7BF01C226 /* NMSSHChannelDelegate.h */,
+				A10E9A83D2E14F656971DC7F41C9313D /* NMSSHConfig.h */,
+				B0928D3CCA5EC0FBADC27C34667DB7FB /* NMSSHConfig.m */,
+				BA5C761D44C49334F8CE7F2DEF4177E2 /* NMSSHHostConfig.h */,
+				3F6DA29F17A66F85B0A3005DCA2755B3 /* NMSSHHostConfig.m */,
+				02CD80B41F18EB02B9F02F8220DEC478 /* NMSSHLogger.h */,
+				D1B19C731F042A475874E030FFCFB96F /* NMSSHLogger.m */,
+				A6DB9B1F526EB2BFB7E043BE2D17949E /* NMSSHSession.h */,
+				09AE09AAEE72D6A6F2300AC3489365EA /* NMSSHSession.m */,
+				23AABBF238DE3131C69AF85A72690CD0 /* NMSSHSessionDelegate.h */,
+				76F400B2B80DF29B846B40D0102BD70B /* socket_helper.h */,
+				22A2B724F26C07CC09B4D352AD05F4EA /* socket_helper.m */,
+				14FAA8F4A78CF2D5C4C04B2278FD5AB9 /* Frameworks */,
+				8A9A709AFD57454942F8CCDBF38DDDAC /* Support Files */,
+			);
+			name = NMSSH;
+			path = NMSSH;
+			sourceTree = "<group>";
+		};
+		C1DC72122589227CFDE25F52FC11D491 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				931ABA13657F8C9819992BFA5857EF17 /* NMSSH.framework */,
+				A42411AF349D9D13963E459BA086FBF3 /* iOS */,
+				59955F095C62FC06AAA114C9C16BB79E /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9C7C026478250556BDD1A791173BCB9 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				48E8E020C8CC0C0C2DF30A5FE5B361EC /* Constraint.swift */,
+				96A6AAD57DCE65AB0BA3FEF5D45CBB37 /* ConstraintAttributes.swift */,
+				63EE036973AB439BA4D35A79BBF427E1 /* ConstraintConfig.swift */,
+				DD681024D4C2A4B27F5B6AD3A730EFE9 /* ConstraintConstantTarget.swift */,
+				3B46758361172E24468EEE596FC19813 /* ConstraintDescription.swift */,
+				449FA71E9F4A0B2C8F8EF9EA80DF314A /* ConstraintDSL.swift */,
+				4FBD8BEA29327CB1CBD6EE2AD70FF3FD /* ConstraintInsets.swift */,
+				14FE64971DDBE4A2304A56DB4C59156E /* ConstraintInsetTarget.swift */,
+				A25591E506D5C0896CE3C3EF32AFA8F9 /* ConstraintItem.swift */,
+				0BC2608E112C80BBAF6CE428993AA6E9 /* ConstraintLayoutGuide.swift */,
+				AF32834AB288198D41C1A768855FA04F /* ConstraintLayoutGuide+Extensions.swift */,
+				24905F767C5DDEFDFA13A034735A6286 /* ConstraintLayoutGuideDSL.swift */,
+				F5709E7EA637CD205E621029B5D451E4 /* ConstraintLayoutSupport.swift */,
+				40EE2976D83C9CABA865E977D2A57660 /* ConstraintLayoutSupportDSL.swift */,
+				DB9E0088DF43B7E1049DEC5F485E96A4 /* ConstraintMaker.swift */,
+				C56BA902957C18F6E457467D73C03602 /* ConstraintMakerEditable.swift */,
+				765FDCBDA63D28C332D7F0C23449E2E5 /* ConstraintMakerExtendable.swift */,
+				BCFE762020EB7B388CF7E666148192F2 /* ConstraintMakerFinalizable.swift */,
+				70F733CFADDCF0A02532E59D37547CBE /* ConstraintMakerPriortizable.swift */,
+				22A7129D1B39F0D74B1D29C0B4730F08 /* ConstraintMakerRelatable.swift */,
+				B84B4AE0DD7B89F5D32DAE3AE0B2C02E /* ConstraintMultiplierTarget.swift */,
+				A428DD11A858FEE03FC21F4FF8ED5B88 /* ConstraintOffsetTarget.swift */,
+				228F0F9FDE137F8C8E192C10C3BD34B5 /* ConstraintPriority.swift */,
+				BFD280DE3518CE0D4B28B2A957E341DB /* ConstraintPriorityTarget.swift */,
+				E17EEF4AD55AAEA5B429BAAE09AF85A6 /* ConstraintRelatableTarget.swift */,
+				040F532877AB8153E374AC333D1020E1 /* ConstraintRelation.swift */,
+				0E3965C2D71844EB8AD19CBCD09399FD /* ConstraintView.swift */,
+				E1F9805932EC4E43FC0ADC5654830D97 /* ConstraintView+Extensions.swift */,
+				B8F701EC6837746AE8DD3EF14FB49EAF /* ConstraintViewDSL.swift */,
+				25FD28353CFD48A43E0E75ABF4654A78 /* Debugging.swift */,
+				E199A562F4950EC6E7A6C777A1C6140E /* LayoutConstraint.swift */,
+				E727F825F85A793278377960BCDE9D82 /* LayoutConstraintItem.swift */,
+				479145DAEF8258BDD26D5F9A1014DABB /* Typealiases.swift */,
+				E0FB4A4381321D96066A71B02066B60D /* UILayoutSupport+Extensions.swift */,
+				3C5D1FE7E554B048765F96239385559A /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C1DC72122589227CFDE25F52FC11D491 /* Frameworks */,
+				109DE44AA908E43337EB40975FF6AC4B /* Pods */,
+				EC31A345544B31195D88897CFC52B3DB /* Products */,
+				9E7459571C30809A3EA5B11E9408AF69 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E60BBCD3C45F6148A12C4080C4C4CBA8 /* Pods-WatchTerm */ = {
+			isa = PBXGroup;
+			children = (
+				3D47481A491C4F36389FC4457A975654 /* Pods-WatchTerm.modulemap */,
+				01A182232555121CE3923811F99FD30E /* Pods-WatchTerm-acknowledgements.markdown */,
+				872AAA1CA1DA632A00F9960BDF4814C4 /* Pods-WatchTerm-acknowledgements.plist */,
+				857B9BF1AE59FD04C689813B5C5EDFE4 /* Pods-WatchTerm-dummy.m */,
+				FCFD8D18A8BDCA31F83DB185CE0CE114 /* Pods-WatchTerm-frameworks.sh */,
+				62DAABF2209D35D1AF9FFC2BB4E4092B /* Pods-WatchTerm-Info.plist */,
+				BAE376754C1AE77F3DB9C037263FB207 /* Pods-WatchTerm-umbrella.h */,
+				BC6D6CC03CDC8786725CCB40A18F8C2D /* Pods-WatchTerm.debug.xcconfig */,
+				0D8AC8322CBB358D42AE46CA86BFD2EA /* Pods-WatchTerm.release.xcconfig */,
+			);
+			name = "Pods-WatchTerm";
+			path = "Target Support Files/Pods-WatchTerm";
+			sourceTree = "<group>";
+		};
+		EC31A345544B31195D88897CFC52B3DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EC50AC138A8B8F8D29984656D01F952 /* libPods-WatchTerm WatchKit App.a */,
+				26D99ED2B1ABBD934D8BC2FB60B20725 /* NMSSH.framework */,
+				4DCB12683F1DFF28B1E98E41299B9C2A /* Pods_WatchTerm.framework */,
+				9A6820D57346F6BC4BE6AFBD8216FB40 /* Pods_WatchTerm_WatchKit_Extension.framework */,
+				207D7257367919E0600E8B254A8D70F7 /* PVPMikrotikSSH.framework */,
+				2BAB94A2701EE661500A80EE8069CA22 /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		36F9490977915873DBF96AE8ED8E7F49 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBBFB62001FF0278912118D10D78046D /* Pods-WatchTerm-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A0FFDD57AA2A8B9AE04FCE04FCDE5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE591C8216D643378147927A5D4A9D2E /* Pods-WatchTerm WatchKit Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8332E0D0DA6FFF8740ABAA56D311F4B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED9A132AA06B99E45826E22386C538C /* PVPMikrotikSSH-umbrella.h in Headers */,
+				E7DB307ED4496F3557B5323DD0860564 /* PVPMikrotikSSH.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		875E7DDAA60BD2787712C6B6CC330C34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1DE23E8F5A69B854105653EC0F5010 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0D9B5106F3044245644F7BA4A1E9E26 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C63BAA0C80D4541AE89A2282F9A8C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6393F931F882C14DEB2D8B7D1D537CDE /* libssh2.h in Headers */,
+				26C1C0E2DDE064F2CD8CB8062B1FA527 /* libssh2_publickey.h in Headers */,
+				93DEACB88110CBC9F9E1468B30A26442 /* libssh2_sftp.h in Headers */,
+				FE88B84045F101F0100DE09880AD7011 /* NMSFTP.h in Headers */,
+				D8BFC6AC5E0F79C022EE3B52738ACEAD /* NMSFTPFile.h in Headers */,
+				C9EE512D1B54FE8F73457B3B4D977D05 /* NMSSH+Protected.h in Headers */,
+				D1668ED971DFB69F97BA6C65CC95D572 /* NMSSH-umbrella.h in Headers */,
+				CF87BA03FF053EC2C9E4E8634216AB32 /* NMSSH.h in Headers */,
+				6A6A1D8CD2E448236AD039C71841B88A /* NMSSH.h in Headers */,
+				C05696CD96727BB0F683AAEB3B066D79 /* NMSSHChannel.h in Headers */,
+				1A602E74C4D12FBEEB05DD308D31888B /* NMSSHChannelDelegate.h in Headers */,
+				0C2A1A5FBBB9FBFC8FD1DE64C711A525 /* NMSSHConfig.h in Headers */,
+				F36C4ED62947D6369F62A68AAA6B3D74 /* NMSSHHostConfig.h in Headers */,
+				8AF8EEF4044EFC483C2C448F53A52ECD /* NMSSHLogger.h in Headers */,
+				7D7A35A7979C2B321C455F68F527D3EE /* NMSSHSession.h in Headers */,
+				FF0E7DC39EF346395F682207D1D1AA6D /* NMSSHSessionDelegate.h in Headers */,
+				35890190F88D371A547BCA1CD937F744 /* socket_helper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7900098E8A642AE19324E08926874005 /* Pods-WatchTerm WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 775DD44B6576E0751F31E90747D83839 /* Build configuration list for PBXNativeTarget "Pods-WatchTerm WatchKit App" */;
+			buildPhases = (
+				C0D9B5106F3044245644F7BA4A1E9E26 /* Headers */,
+				B642E42FDB317C5D27371D4B93821E0B /* Sources */,
+				F706C7B55A66F653DA25E6E6C3A46E65 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WatchTerm WatchKit App";
+			productName = "Pods-WatchTerm WatchKit App";
+			productReference = 9EC50AC138A8B8F8D29984656D01F952 /* libPods-WatchTerm WatchKit App.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7A9C67E57A53684BDE233CFBFE5C3209 /* Pods-WatchTerm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2377EF67425F43061B42CDD9CD379E7 /* Build configuration list for PBXNativeTarget "Pods-WatchTerm" */;
+			buildPhases = (
+				36F9490977915873DBF96AE8ED8E7F49 /* Headers */,
+				3574DB4F4C5CFBC1B4C491126DE19C97 /* Sources */,
+				DB21D297339B48816D86E2E64BC6D5B3 /* Frameworks */,
+				C3B9BC99C9F4451507381DC8B6C6B42A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C4E58C7FD8F400C7E21DBD936BDA0DE /* PBXTargetDependency */,
+				6367201A4A105525812C0E8EED289B4C /* PBXTargetDependency */,
+				4D2ECFB6B74643CB72568CE13E5F6291 /* PBXTargetDependency */,
+			);
+			name = "Pods-WatchTerm";
+			productName = "Pods-WatchTerm";
+			productReference = 4DCB12683F1DFF28B1E98E41299B9C2A /* Pods_WatchTerm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B1FA1B3804F190638BECBDA7B48B0E48 /* PVPMikrotikSSH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6C27B72D7D361E83F0DB4FDA05665C4 /* Build configuration list for PBXNativeTarget "PVPMikrotikSSH" */;
+			buildPhases = (
+				8332E0D0DA6FFF8740ABAA56D311F4B2 /* Headers */,
+				208F6B56446727762E78BF3335C72B59 /* Sources */,
+				7BADDB89B0F8815710172258ECE458DA /* Frameworks */,
+				39A75F291F5F07A4808A34CD5D19A093 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8695FE719B494967F137270AAF2CE0E /* PBXTargetDependency */,
+			);
+			name = PVPMikrotikSSH;
+			productName = PVPMikrotikSSH;
+			productReference = 207D7257367919E0600E8B254A8D70F7 /* PVPMikrotikSSH.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C45697D57ED862CA87EDEC460CDC2214 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47082269058419C69B2271E45FBECC8A /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				875E7DDAA60BD2787712C6B6CC330C34 /* Headers */,
+				6747ADCDD73EF7BD5AD813CEB18EB974 /* Sources */,
+				20F8F31BD9BBCAD67F11EB98BECAA04F /* Frameworks */,
+				3DFA4D42002461935D33124969B6DC00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 2BAB94A2701EE661500A80EE8069CA22 /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4C38B058AD33DE1FABFEE379CF95262 /* NMSSH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C209A7A212394D2C17F84B1900A094D /* Build configuration list for PBXNativeTarget "NMSSH" */;
+			buildPhases = (
+				D4C63BAA0C80D4541AE89A2282F9A8C1 /* Headers */,
+				0D8B657A6996D0EF67F74B8A522C0570 /* Sources */,
+				D43FA024FDF84836B672895D5CEBDBB2 /* Frameworks */,
+				E381ECB7ECCA79994A01BE6FD2AD80CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NMSSH;
+			productName = NMSSH;
+			productReference = 26D99ED2B1ABBD934D8BC2FB60B20725 /* NMSSH.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E760002A8EE603B6079523283FA1721A /* Pods-WatchTerm WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4AD7F1017D734A1BA78C68BC301AFD8 /* Build configuration list for PBXNativeTarget "Pods-WatchTerm WatchKit Extension" */;
+			buildPhases = (
+				445A0FFDD57AA2A8B9AE04FCE04FCDE5 /* Headers */,
+				D07B36386FAC59AD356E7E5F84BF7867 /* Sources */,
+				DE8C7D5C273A0D20A67696702EA42753 /* Frameworks */,
+				56866E85C5066BA9297C39311A07BAB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WatchTerm WatchKit Extension";
+			productName = "Pods-WatchTerm WatchKit Extension";
+			productReference = 9A6820D57346F6BC4BE6AFBD8216FB40 /* Pods_WatchTerm_WatchKit_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EC31A345544B31195D88897CFC52B3DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4C38B058AD33DE1FABFEE379CF95262 /* NMSSH */,
+				7A9C67E57A53684BDE233CFBFE5C3209 /* Pods-WatchTerm */,
+				7900098E8A642AE19324E08926874005 /* Pods-WatchTerm WatchKit App */,
+				E760002A8EE603B6079523283FA1721A /* Pods-WatchTerm WatchKit Extension */,
+				B1FA1B3804F190638BECBDA7B48B0E48 /* PVPMikrotikSSH */,
+				C45697D57ED862CA87EDEC460CDC2214 /* SnapKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39A75F291F5F07A4808A34CD5D19A093 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DFA4D42002461935D33124969B6DC00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56866E85C5066BA9297C39311A07BAB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B9BC99C9F4451507381DC8B6C6B42A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E381ECB7ECCA79994A01BE6FD2AD80CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D8B657A6996D0EF67F74B8A522C0570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC21C3EC1B6DFCDD4E4B4CEF2A4B022B /* NMSFTP.m in Sources */,
+				54F3B621B8463D85E0CD9566F075E4A5 /* NMSFTPFile.m in Sources */,
+				7A21EEB8F8A87F0C5C581722519FE3C0 /* NMSSH-dummy.m in Sources */,
+				DFC37DD8A79EEC4B67ED240FF79FE50D /* NMSSHChannel.m in Sources */,
+				832695AD3BB75D2F465172711531EB6C /* NMSSHConfig.m in Sources */,
+				8BA5575FBD7FC88FB42646734B9D29EC /* NMSSHHostConfig.m in Sources */,
+				4E4622150E5FFFCEE7A9C1FF35A42AE8 /* NMSSHLogger.m in Sources */,
+				0E1BFEE90CE865B2DBDDB820B6974771 /* NMSSHSession.m in Sources */,
+				EB55FCEE8D2FC261D8502455C16BCE2F /* socket_helper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		208F6B56446727762E78BF3335C72B59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51B4D455CFDC518DEBD083F5A9E06C00 /* PVPError.swift in Sources */,
+				C730097CDEC2FC60951A9691EB830FA1 /* PVPMikrotikSSH-dummy.m in Sources */,
+				6F97AB4FB74E172ED968D0C68C89A41F /* PVPSSHManager.swift in Sources */,
+				8B737099939B4594A6709B0BCAD77015 /* PVPSSHSecure.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3574DB4F4C5CFBC1B4C491126DE19C97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD04CE263597CD47B1A91907AA36D5BA /* Pods-WatchTerm-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6747ADCDD73EF7BD5AD813CEB18EB974 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D16DBF9D1C9ECF67C9B07D00B583F7A5 /* Constraint.swift in Sources */,
+				6C67D9961391D5958EF3C33A3F6BB020 /* ConstraintAttributes.swift in Sources */,
+				4DB6DD9F9EA93D2E20C95C9C83DB7D93 /* ConstraintConfig.swift in Sources */,
+				E613C358F085C645CA4D48AF56D1F40E /* ConstraintConstantTarget.swift in Sources */,
+				505A1E14E0953EAC28E0E6186D4A741A /* ConstraintDescription.swift in Sources */,
+				8E2767F1FD9A936DBD54F81B30A76182 /* ConstraintDSL.swift in Sources */,
+				CAA82AA491A65FBBD3670424D88503A5 /* ConstraintInsets.swift in Sources */,
+				FC29303F36A7E5C38302CE8985F7E2A4 /* ConstraintInsetTarget.swift in Sources */,
+				A6C922076D60F5AAB637EA1876DCE49F /* ConstraintItem.swift in Sources */,
+				643C5ACF1A72433906E474D5DA2C5DCF /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				CCCD3B94F709800995C086BBAE5132CE /* ConstraintLayoutGuide.swift in Sources */,
+				7F2B11A9A344CEAF37259FE712907AAA /* ConstraintLayoutGuideDSL.swift in Sources */,
+				9B93305FC74D2CA77F65CB4C74D5BD05 /* ConstraintLayoutSupport.swift in Sources */,
+				6888C5122D9A379923EAA431A5D109E3 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				A02B7B4EBC9BA58C5861420F287912DD /* ConstraintMaker.swift in Sources */,
+				9AF1BE40B331C64DAE5BF77F8546C046 /* ConstraintMakerEditable.swift in Sources */,
+				117A5DA1B1578547FE0A4EBABE450A3B /* ConstraintMakerExtendable.swift in Sources */,
+				3BD74B8F7D0F08C5C340ACE62551D33F /* ConstraintMakerFinalizable.swift in Sources */,
+				78AE3CC27B1A27EC6027841A5BB5CF4E /* ConstraintMakerPriortizable.swift in Sources */,
+				4C766D5F879FBAB7F8B27F9262232BBF /* ConstraintMakerRelatable.swift in Sources */,
+				C89E2B67368CB04A85D5D00328D55951 /* ConstraintMultiplierTarget.swift in Sources */,
+				332CF4335EDA1856FDD4AE1B1CE09355 /* ConstraintOffsetTarget.swift in Sources */,
+				A704A06E9D7C38C687D877055464E55F /* ConstraintPriority.swift in Sources */,
+				2D8B873B0D501D68F3F9A4AF80A8049B /* ConstraintPriorityTarget.swift in Sources */,
+				874345B7A2AAB6344263E134CD5DF942 /* ConstraintRelatableTarget.swift in Sources */,
+				C7E1150C2926EAEE0E7C9D8F65A41204 /* ConstraintRelation.swift in Sources */,
+				1320CDBDD7D857243FCD151329F1E1A1 /* ConstraintView+Extensions.swift in Sources */,
+				CDF8D7781F67EC8DCF5C8F0D3816F1AA /* ConstraintView.swift in Sources */,
+				708C58DD03BCD898EE81963582D0EFD2 /* ConstraintViewDSL.swift in Sources */,
+				2C8681CE8ED26467C0F9D7FB16579E06 /* Debugging.swift in Sources */,
+				05D10421E11269EA8421CA092321E851 /* LayoutConstraint.swift in Sources */,
+				21EEB2836E6D20B82BAF1B99C05A1604 /* LayoutConstraintItem.swift in Sources */,
+				1A0500AD04074C74F6D1F2C83DB40467 /* SnapKit-dummy.m in Sources */,
+				89D40E25AD838549BF9F4D40EA16012F /* Typealiases.swift in Sources */,
+				DD8578E7F98195AF3026DBE03E6E8A24 /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B642E42FDB317C5D27371D4B93821E0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3A93A34F2587621C09783A9021F205 /* Pods-WatchTerm WatchKit App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D07B36386FAC59AD356E7E5F84BF7867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79359CF058B3376845372B9D47EB3B21 /* Pods-WatchTerm WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D2ECFB6B74643CB72568CE13E5F6291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = C45697D57ED862CA87EDEC460CDC2214 /* SnapKit */;
+			targetProxy = 3C5931ECFD6E1F49DA42133FD050D5B9 /* PBXContainerItemProxy */;
+		};
+		5C4E58C7FD8F400C7E21DBD936BDA0DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NMSSH;
+			target = D4C38B058AD33DE1FABFEE379CF95262 /* NMSSH */;
+			targetProxy = 3ABD539A003B1D47808830BD557F847A /* PBXContainerItemProxy */;
+		};
+		6367201A4A105525812C0E8EED289B4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PVPMikrotikSSH;
+			target = B1FA1B3804F190638BECBDA7B48B0E48 /* PVPMikrotikSSH */;
+			targetProxy = A489EB884E45F7D99BF601625B3016D7 /* PBXContainerItemProxy */;
+		};
+		E8695FE719B494967F137270AAF2CE0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NMSSH;
+			target = D4C38B058AD33DE1FABFEE379CF95262 /* NMSSH */;
+			targetProxy = 69EF8E0470C42D934DE4A0B0B9ACF87D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01A7C7C952FF37FFC7D9E7B59D94773B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		231ED378A02BE744909696189ABED061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D5BDE7B80BB5E33D73A0C8F7694FEF3 /* Pods-WatchTerm WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WatchTerm WatchKit Extension/Pods-WatchTerm WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WatchTerm WatchKit Extension/Pods-WatchTerm WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		497944C8467037A731CD8406EF71CF9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC352D11FC9E33E4D8910B857D1A52D9 /* Pods-WatchTerm WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WatchTerm WatchKit Extension/Pods-WatchTerm WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WatchTerm WatchKit Extension/Pods-WatchTerm WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		5D8AB7F06BD4CE0C16AE7BD8C770469C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ABAC06B6D607300A09E510C98BD7508 /* PVPMikrotikSSH.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PVPMikrotikSSH/PVPMikrotikSSH-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PVPMikrotikSSH/PVPMikrotikSSH-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PVPMikrotikSSH/PVPMikrotikSSH.modulemap";
+				PRODUCT_MODULE_NAME = PVPMikrotikSSH;
+				PRODUCT_NAME = PVPMikrotikSSH;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7A405132C24875ED795E0E30B9252848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4817F65F32107EA623C48482EF86DEB /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84B7CDF59A5DF078855145D2792CA8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767F5A66699DF5A6C245B7C1DA5D8781 /* NMSSH.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NMSSH/NMSSH-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NMSSH/NMSSH-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NMSSH/NMSSH.modulemap";
+				PRODUCT_MODULE_NAME = NMSSH;
+				PRODUCT_NAME = NMSSH;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8920C44238E22D37343E8E30B833ED8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC6D6CC03CDC8786725CCB40A18F8C2D /* Pods-WatchTerm.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WatchTerm/Pods-WatchTerm-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WatchTerm/Pods-WatchTerm.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F8F578DE83D30DE9333AB8742FA957C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D58EBC94E74AC312A6AEDD7C90DA26D5 /* Pods-WatchTerm WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		9C3D3A0EBC06FDB20B4391EA5929C645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 987508793EF20A84FC9732EA4E04CCD5 /* Pods-WatchTerm WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		C1D0500DC684566C0F70A50D05DDF517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D8AC8322CBB358D42AE46CA86BFD2EA /* Pods-WatchTerm.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WatchTerm/Pods-WatchTerm-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WatchTerm/Pods-WatchTerm.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CFBFC5DCB7C2C545980AC22678149472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767F5A66699DF5A6C245B7C1DA5D8781 /* NMSSH.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NMSSH/NMSSH-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NMSSH/NMSSH-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NMSSH/NMSSH.modulemap";
+				PRODUCT_MODULE_NAME = NMSSH;
+				PRODUCT_NAME = NMSSH;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DE4D2F2638CFB893B597F88C5EE38531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4817F65F32107EA623C48482EF86DEB /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E62093D09571FE109E728D7804F4E100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ABAC06B6D607300A09E510C98BD7508 /* PVPMikrotikSSH.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PVPMikrotikSSH/PVPMikrotikSSH-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PVPMikrotikSSH/PVPMikrotikSSH-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PVPMikrotikSSH/PVPMikrotikSSH.modulemap";
+				PRODUCT_MODULE_NAME = PVPMikrotikSSH;
+				PRODUCT_NAME = PVPMikrotikSSH;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F480B286F005596CF688ECEBE7835FC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47082269058419C69B2271E45FBECC8A /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE4D2F2638CFB893B597F88C5EE38531 /* Debug */,
+				7A405132C24875ED795E0E30B9252848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01A7C7C952FF37FFC7D9E7B59D94773B /* Debug */,
+				F480B286F005596CF688ECEBE7835FC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C209A7A212394D2C17F84B1900A094D /* Build configuration list for PBXNativeTarget "NMSSH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFBFC5DCB7C2C545980AC22678149472 /* Debug */,
+				84B7CDF59A5DF078855145D2792CA8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		775DD44B6576E0751F31E90747D83839 /* Build configuration list for PBXNativeTarget "Pods-WatchTerm WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F8F578DE83D30DE9333AB8742FA957C /* Debug */,
+				9C3D3A0EBC06FDB20B4391EA5929C645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4AD7F1017D734A1BA78C68BC301AFD8 /* Build configuration list for PBXNativeTarget "Pods-WatchTerm WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				497944C8467037A731CD8406EF71CF9B /* Debug */,
+				231ED378A02BE744909696189ABED061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2377EF67425F43061B42CDD9CD379E7 /* Build configuration list for PBXNativeTarget "Pods-WatchTerm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8920C44238E22D37343E8E30B833ED8D /* Debug */,
+				C1D0500DC684566C0F70A50D05DDF517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6C27B72D7D361E83F0DB4FDA05665C4 /* Build configuration list for PBXNativeTarget "PVPMikrotikSSH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D8AB7F06BD4CE0C16AE7BD8C770469C /* Debug */,
+				E62093D09571FE109E728D7804F4E100 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -13,7 +13,6 @@
 		B85A07A52238021400CCB039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07A42238021400CCB039 /* AppDelegate.swift */; };
 		B85A07A72238021400CCB039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07A62238021400CCB039 /* ViewController.swift */; };
 		B85A07AC2238021500CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A07AB2238021500CCB039 /* Assets.xcassets */; };
-		B85A07AF2238021500CCB039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A07AD2238021500CCB039 /* LaunchScreen.storyboard */; };
 		B85A07B42238021500CCB039 /* WatchTerm WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B85A07B32238021500CCB039 /* WatchTerm WatchKit App.app */; };
 		B85A07BA2238021500CCB039 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A07B82238021500CCB039 /* Interface.storyboard */; };
 		B85A07BC2238021600CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A07BB2238021600CCB039 /* Assets.xcassets */; };
@@ -23,6 +22,7 @@
 		B85A07CC2238021600CCB039 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07CB2238021600CCB039 /* NotificationController.swift */; };
 		B85A07CE2238021600CCB039 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07CD2238021600CCB039 /* ComplicationController.swift */; };
 		B85A07D02238021600CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A07CF2238021600CCB039 /* Assets.xcassets */; };
+		B85A07E6223811A200CCB039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A07E5223811A200CCB039 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +79,6 @@
 		B85A07A42238021400CCB039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B85A07A62238021400CCB039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B85A07AB2238021500CCB039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B85A07AE2238021500CCB039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B85A07B02238021500CCB039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B85A07B32238021500CCB039 /* WatchTerm WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchTerm WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85A07B92238021500CCB039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -93,6 +92,7 @@
 		B85A07CF2238021600CCB039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B85A07D12238021600CCB039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B85A07D22238021600CCB039 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B85A07E5223811A200CCB039 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE0AA703EE12FD44543144A0 /* Pods-WatchTerm WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTerm WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-WatchTerm WatchKit Extension/Pods-WatchTerm WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		E675332E408164CF1B4209CC /* Pods-WatchTerm WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTerm WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-WatchTerm WatchKit Extension/Pods-WatchTerm WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,8 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				B85A07A42238021400CCB039 /* AppDelegate.swift */,
+				B85A07E5223811A200CCB039 /* LaunchScreen.storyboard */,
 				B85A07AB2238021500CCB039 /* Assets.xcassets */,
-				B85A07AD2238021500CCB039 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -345,8 +345,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B85A07AF2238021500CCB039 /* LaunchScreen.storyboard in Resources */,
 				B85A07AC2238021500CCB039 /* Assets.xcassets in Resources */,
+				B85A07E6223811A200CCB039 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,14 +501,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B85A07AD2238021500CCB039 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B85A07AE2238021500CCB039 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		B85A07B82238021500CCB039 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

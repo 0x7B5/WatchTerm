@@ -1,0 +1,6 @@
+framework module Pods_WatchTerm {
+  umbrella header "Pods-WatchTerm-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,32 @@
+PODS:
+  - NMSSH (2.2.9)
+  - PVPMikrotikSSH (1.0.6):
+    - NMSSH (= 2.2.9)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - PVPMikrotikSSH (from `https://github.com/BlindDev/PVPMikrotikSSH.git`)
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - NMSSH
+    - SnapKit
+
+EXTERNAL SOURCES:
+  PVPMikrotikSSH:
+    :git: https://github.com/BlindDev/PVPMikrotikSSH.git
+
+CHECKOUT OPTIONS:
+  PVPMikrotikSSH:
+    :commit: eac8b4883e18214abc34939aea9190941941097c
+    :git: https://github.com/BlindDev/PVPMikrotikSSH.git
+
+SPEC CHECKSUMS:
+  NMSSH: eb4a63d52631d3ffe348181793bb19434b01c32a
+  PVPMikrotikSSH: 7b9c7b99186d26f0c941461c4d2ae63404947b47
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: c35b487745aaedc1ee73b8f8803b36e58adeb32c
+
+COCOAPODS: 1.6.1

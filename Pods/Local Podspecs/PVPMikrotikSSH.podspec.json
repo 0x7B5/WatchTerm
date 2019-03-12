@@ -1,0 +1,32 @@
+{
+  "name": "PVPMikrotikSSH",
+  "version": "1.0.6",
+  "summary": "Simple SSH manager that uses NMSSH library",
+  "description": "Simple SSH manager that uses NMSSH library for making SSH connection to MikroTik routers",
+  "homepage": "https://github.com/BlindDev/PVPMikrotikSSH",
+  "license": "MIT",
+  "authors": {
+    "Pavel Popov": ""
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/BlindDev/PVPMikrotikSSH.git",
+    "tag": "1.0.6"
+  },
+  "source_files": [
+    "PVPMikrotikSSH",
+    "PVPMikrotikSSH/**/*.{h,m}"
+  ],
+  "public_header_files": "PVPMikrotikSSH/**/*.h",
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "3"
+  },
+  "requires_arc": true,
+  "dependencies": {
+    "NMSSH": [
+      "2.2.9"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+framework module PVPMikrotikSSH {
+  umbrella header "PVPMikrotikSSH-umbrella.h"
+
+  export *
+  module * { export * }
+}
